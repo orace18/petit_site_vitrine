@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserra&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserra',sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #f8ac20ec;
+}
+nav h1{
+    color: #1ba0ec;
+    font-size: 30px;
+}
+
+nav .liens{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+
+nav .liens a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.liens a:hover{
+    color: #f8ac20ec;
+    border-bottom: 2px solid #f8ac20ec;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../images/ipad-clair.jpg');
+    background-size: cover;
+    color: #FFF;
+    padding: 40px;
+}
+
+header h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+header h4{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #FFF;
+}
+
+header p{
+    font-size: 15px;
+    text-align: center;
+}
+
+header button{
+    padding: 10px 20px ;
+    background-color: #f8ac20ec;
+    color: #FFF;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.services{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.services .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background: #1ba0ec;
+    color: #f8ac20ec;
+}
+.services .content .card.rigth{
+    flex: 0 0 70%;
+}
+
+.services .content .card .rigth img{
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #f1c329;
+    background-color: #1ba0ec;
+    color: #FFF;
+    padding: 30px 100px;
+}
+footer .importants{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .importants .important{
+    margin-right: 30px;
+    padding: 10px;
+}
+footer .importants .important p{
+    max-width: 300px;
+}
+
+@media screen and (max-width:680px){
+    nav .liens{
+        margin-left: 0px;
+        margin-bottom: 20px; 
+    }
+
+    .services .card{
+        margin: 10px;
+    }
+
+    .services .content .card .rigth img{
+        height: 200px;
+        width: 100%;
+        margin-top: 0px;
+    }
+     .services .content .card{
+        display: block;
+     }
+
+     footer {
+        padding: 30px;
+     }
+}
